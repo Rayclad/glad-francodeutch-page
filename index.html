@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glad FrancoDeutch</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+<!-- HERO -->
+<section class="text-center py-20 bg-black">
+  <h1 class="text-4xl font-bold mb-4">Glad FrancoDeutch</h1>
+  <p class="mb-6">Learn French & German. Pass Exams. Relocate with Confidence 🇩🇪 🇫🇷</p>
+  <a href="https://wa.me/2347017989278" class="bg-green-500 px-6 py-3 rounded text-black font-bold">
+    Chat on WhatsApp
+  </a>
+</section>
+
+<!-- PROGRAMS -->
+<section class="py-16 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-10">Our Programs</h2>
+  <div class="grid md:grid-cols-2 gap-8 text-left max-w-5xl mx-auto">
+
+    <div class="bg-gray-800 p-6 rounded">
+      <h3 class="text-xl font-bold">A1 – Beginner Level</h3>
+      <p>Alphabet, pronunciation, greetings, basic grammar, simple conversations</p>
+      <p>Duration: 12 weeks | Classes: 3×/week</p>
+      <p class="font-bold">₦180,000</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded">
+      <h3 class="text-xl font-bold">A2 – Elementary Level</h3>
+      <p>Daily conversations, past tense, writing, listening</p>
+      <p>Duration: 10–12 weeks | Classes: 3×/week</p>
+      <p class="font-bold">₦180,000</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded">
+      <h3 class="text-xl font-bold">B1 – Intermediate</h3>
+      <p>Opinions, complex sentences, formal writing, mock exams</p>
+      <p>Duration: 12 weeks | Classes: 3×/week</p>
+      <p class="font-bold">₦200,000</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded">
+      <h3 class="text-xl font-bold">B2 – Upper Intermediate</h3>
+      <p>Advanced grammar, vocabulary, essay writing, exam prep</p>
+      <p>Duration: 10–12 weeks | Classes: 3×/week</p>
+      <p class="font-bold">₦250,000</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded">
+      <h3 class="text-xl font-bold">C1 – Advanced</h3>
+      <p>Fluent communication, presentations, professional use</p>
+      <p>Duration: 14 weeks | Classes: 3×/week</p>
+      <p class="font-bold">₦300,000</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded">
+      <h3 class="text-xl font-bold">C2 – Mastery</h3>
+      <p>Near-native fluency, research writing, public speaking</p>
+      <p>Duration: 12–14 weeks | Classes: 3×/week</p>
+      <p class="font-bold">₦400,000</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded col-span-2">
+      <h3 class="text-xl font-bold">Exam Preparation (DELF / Goethe / TestDaF)</h3>
+      <p>10–12 weeks intensive coaching</p>
+      <p class="font-bold">₦250,000</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded col-span-2">
+      <h3 class="text-xl font-bold">Private 1-on-1 Coaching</h3>
+      <p>60 minutes personalized session</p>
+      <p class="font-bold">₦15,000 per session</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- LEAD FORM -->
+<section class="py-16 bg-black px-6 text-center">
+  <h2 class="text-3xl font-bold mb-6">Register for Free Consultation</h2>
+
+  <form id="leadForm" class="max-w-md mx-auto space-y-4">
+    <input type="text" placeholder="Full Name" class="w-full p-3 rounded text-black" required>
+    <input type="email" placeholder="Email" class="w-full p-3 rounded text-black" required>
+    <input type="tel" placeholder="Phone Number" class="w-full p-3 rounded text-black" required>
+
+    <select class="w-full p-3 rounded text-black">
+      <option>Select Program</option>
+      <option>A1 Beginner</option>
+      <option>A2 Elementary</option>
+      <option>B1 Intermediate</option>
+      <option>B2 Upper Intermediate</option>
+      <option>C1 Advanced</option>
+      <option>C2 Mastery</option>
+      <option>Exam Prep</option>
+      <option>Private Coaching</option>
+    </select>
+
+    <button type="submit" class="bg-blue-500 px-6 py-3 rounded w-full font-bold">
+      Submit
+    </button>
+  </form>
+
+  <p id="formMsg" class="mt-4 text-green-400 hidden">Submitted successfully!</p>
+</section>
+
+<!-- PAYMENT -->
+<section class="py-16 text-center px-6">
+  <h2 class="text-3xl font-bold mb-6">Enroll Now</h2>
+  <p class="mb-4">Secure your slot instantly</p>
+  <button onclick="payNow()" class="bg-yellow-500 px-6 py-3 rounded text-black font-bold">
+    Pay Now
+  </button>
+</section>
+
+<!-- BOOKING -->
+<section class="py-16 bg-black text-center px-6">
+  <h2 class="text-3xl font-bold mb-6">Book a Class</h2>
+  <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2example"
+    class="w-full max-w-3xl h-96 mx-auto rounded"></iframe>
+</section>
+
+<!-- CONTACT -->
+<section class="py-16 text-center px-6">
+  <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+  <p>Email: gladysuzochukwu3@gmail.com</p>
+  <p>Phone: 07017989278</p>
+</section>
+
+<!-- CHATBOT -->
+<div class="fixed bottom-4 right-4">
+  <button onclick="toggleChat()" class="bg-green-500 px-4 py-2 rounded">Chat</button>
+  <div id="chatBox" class="hidden bg-white text-black p-4 rounded mt-2 w-64">
+    <p><strong>Hello 👋</strong></p>
+    <p>Interested in learning French or German?</p>
+    <a href="https://wa.me/2347017989278" class="text-blue-500">Chat on WhatsApp</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 bg-gray-900">
+  <p>© 2026 Glad FrancoDeutch</p>
+</footer>
+
+<script>
+// FORM
+document.getElementById('leadForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('formMsg').classList.remove('hidden');
+});
+
+// PAYSTACK
+function payNow(){
+  let handler = PaystackPop.setup({
+    key: 'YOUR_PUBLIC_KEY',
+    email: 'gladysuzochukwu3@gmail.com',
+    amount: 18000000, 
+    currency: 'NGN',
+    callback: function(response){
+      alert('Payment successful!');
+    },
+  });
+  handler.openIframe();
+}
+
+// CHAT
+function toggleChat(){
+  document.getElementById('chatBox').classList.toggle('hidden');
+}
+</script>
+
+</body>
+</html>
